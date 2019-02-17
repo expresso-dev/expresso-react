@@ -1,0 +1,52 @@
+.navbar {
+
+    height: 60px; 
+    width: 100%;
+    color: #fff;
+    vertical-align: middle;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    > .brand {
+        height: 1.2em;
+        position: relative;
+        display: block;
+        margin-top: 21px;
+    }
+    
+    > ul {
+
+        list-style: none;
+        position: relative;
+        display: block;
+        margin: 5px 0;
+        font-size: 13px;
+        transition: .2s color;
+        line-height: 60px;
+
+        li {
+
+            display: block;
+            float: left;
+            margin: 0 35px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                color: rgba(255,255,255,.8);
+                transition: .2s color;
+            }
+        }
+    }
+
+    > .right {
+
+        > li {
+            float: right;
+        }
+    }
+}

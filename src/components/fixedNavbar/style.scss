@@ -1,0 +1,103 @@
+.fixedNavbar {
+
+    height: 45px; 
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.07);
+
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-name: slidedown;
+    animation-name: slidedown;
+    -webkit-animation-timing-function: cubic-bezier(.075,.82,.165,1);
+    animation-timing-function: cubic-bezier(.075,.82,.165,1);
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+        -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+
+    @keyframes slidedown {
+
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0,-100%,0);
+            transform: translate3d(0,-100%,0);
+        }
+
+        1% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+    }
+
+    > .container {
+
+        min-width: 1170px;
+        justify-content: space-between;
+
+        > .brand {
+            height: 1.2em;
+            position: relative;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        > ul {
+
+            list-style: none;
+            position: relative;
+            display: block;
+            margin: 5px 0;
+            transition: .2s color;
+            line-height: 30px;
+            padding-left: 40px;
+
+            li {
+
+                display: block;
+                float: left;
+                margin: 0 35px;
+
+                a {
+
+                    color: #788294;
+                    font-size: 13px;
+                    font-weight: 400;
+                    text-decoration: none;
+
+                }
+
+                a:hover {
+
+                    color: lighten(#788294, 20%);
+                    transition: .2s color;
+
+                }
+
+                .right {
+
+                    float: right;
+
+                    > .loginFixedNavbar {
+
+                        color: #788294;
+                        font-size: 13px;
+                        font-weight: 400;
+
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
