@@ -47,56 +47,6 @@
 	    		}
 	    	}
 	    }
-
-	    > .newsletter {
-
-	    	padding-bottom: 40px;
-
-		    > h5 {
-		    	color: #3e3e3e;
-		    	font-weight: 700;
-				font-size: 16px;
-			    padding-bottom: 4px; 
-			    max-width: 585px;
-			    display: inline-flex;
-			    margin-bottom: 5px;
-			    padding: 0;
-		   	}
-
-		    > p {
-			  	color: #a1a9b6;
-			    font-weight: 300;
-			    font-size: 16px;
-			    padding-bottom: 4px;
-			    letter-spacing: 0.01em;
-			 	max-width: 585px;
-			    display: inline-flex;
-			}
-
-			form {
-
-				display: inline-flex;
-				max-width: 585px;
-				width: 100%;
-				padding: 0 0 20px;
-
-				.userInputField {
-    				width: 100%;
-    				width: 380px;
-    				margin-left: 100px;
-    				border: none;
-    			    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
-				}
-
-				.submitButton {
-					color: #fff;
-					font-weight: 400;
-					background-color: #3880ff;
-					border: 1px solid #3880ff;
-					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
-				}
-			}
-	    }
 	}
 }
 
